@@ -1,8 +1,9 @@
-# React + Vite
+# 나만의 포켓몬도감
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 사용 기술
 
-Currently, two official plugins are available:
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 설명
+
+- MOCK_DATA에서 데이터를 가져와 포켓몬을 출력합니다.
