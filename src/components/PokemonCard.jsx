@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { PokemonDataContext } from "../context/PokemonDataContext";
 
-const PokemonCard = ({ pokemon, addPokemon }) => {
+const PokemonCard = ({ pokemon }) => {
   const navigate = useNavigate();
+
+  const { addPokemon } = useContext(PokemonDataContext);
 
   return (
     <li>

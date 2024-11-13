@@ -48,17 +48,11 @@ const StyleUl = styled.ul`
   }
 `;
 
-const PokemonList = ({ addPokemon }) => {
+const PokemonList = () => {
   return (
     <StyleUl>
       {MOCK_DATA.map((pokemon) => {
-        return (
-          <PokemonCard
-            key={pokemon.id}
-            pokemon={pokemon}
-            addPokemon={addPokemon}
-          />
-        );
+        return <PokemonCard key={pokemon.id} pokemon={pokemon} />;
       })}
     </StyleUl>
   );
