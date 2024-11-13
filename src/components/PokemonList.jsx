@@ -7,16 +7,15 @@ const StyleUl = styled.ul`
   width: 1280px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
 
   li {
     position: relative;
     height: 200px;
-    padding: 30px 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
+    background-color: #eee;
   }
   li a {
     text-decoration: none;
@@ -27,9 +26,23 @@ const StyleUl = styled.ul`
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 7px;
+  }
+
+  li div {
+    background: #fff;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    box-sizing: border-box;
+    padding: 30px 0;
   }
 
   li button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: #fff;
     position: relative;
     z-index: 99;
   }

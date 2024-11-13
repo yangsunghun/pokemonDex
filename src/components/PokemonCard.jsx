@@ -15,10 +15,13 @@ const PokemonCard = ({ pokemon, addPokemon }) => {
           }
         }}
       >
-        <img src={pokemon.img_url} alt={pokemon.korean_name} />
-        <p>{pokemon.korean_name}</p>
-        <p>No. {pokemon.id}</p>
-        <button onClick={() => addPokemon(pokemon)}>추가</button>
+        <div>
+          <p>
+            No. {pokemon.id} {pokemon.korean_name}
+          </p>
+          <img src={pokemon.img_url} alt={pokemon.korean_name} />
+          <button onClick={() => addPokemon(pokemon)}>추가</button>
+        </div>
       </a>
     </li>
   );
