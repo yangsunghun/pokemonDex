@@ -23,6 +23,7 @@ const PokemonCard = ({ pokemon }) => {
             No. {pokemon.id} {pokemon.korean_name}
           </p>
           <img src={pokemon.img_url} alt={pokemon.korean_name} />
+          <p>타입 : {pokemon?.types.join(", ")}</p>
           <button onClick={() => addPokemon(pokemon)}>추가</button>
         </div>
       </a>
