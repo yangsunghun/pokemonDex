@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Dashboard from "./components/Dashboard";
-import PokemonList from "./components/PokemonList";
+import Dashboard from "../components/Dashboard";
+import PokemonList from "../components/PokemonList";
 
 const Dex = () => {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
@@ -16,7 +16,7 @@ const Dex = () => {
     }
 
     if (selectedPokemon.length >= 6) {
-      alert("6개 이상입니다");
+      alert("6개 이상 추가할 수 없습니다.");
       return;
     }
 
