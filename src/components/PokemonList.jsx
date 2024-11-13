@@ -12,7 +12,7 @@ const StyleUl = styled.ul`
 
   li {
     position: relative;
-    height: 200px;
+    height: 230px;
     border-radius: 10px;
     text-align: center;
     background-color: #eee;
@@ -40,7 +40,7 @@ const StyleUl = styled.ul`
   li button {
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: 15px auto;
     border: 1px solid #ccc;
     background: #fff;
     position: relative;
