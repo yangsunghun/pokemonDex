@@ -5,6 +5,8 @@ import Dex from "../pages/Dex";
 import PokemonDetail from "../pages/PokemonDetail";
 
 const Router = () => {
+
+
   return (
     <BrowserRouter>
       <Routes>

@@ -17,7 +17,7 @@ const IntroSec = styled.section`
   }
 
   button {
-    padding: 10px 50px 12px ;
+    padding: 10px 50px 12px;
     font-size: 20px;
     color: #333;
     background: #fff;

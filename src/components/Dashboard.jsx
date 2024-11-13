@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { PokemonDataContext } from "../context/PokemonDataContext";
 
 const DashboardBox = styled.ul`
   display: flex;
@@ -34,8 +35,10 @@ const SelectedPokemon = styled.li`
   }
 `;
 
-const Dashboard = ({ selectedPokemon, deletePokemon }) => {
+const Dashboard = () => {
   // const array = Array.from({length: 6}, () => null);
+
+  const { selectedPokemon, deletePokemon } = useContext(PokemonDataContext);
 
   return (
     <DashboardBox>
