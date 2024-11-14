@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { PokemonDataContext } from "../context/PokemonDataContext";
+//import { PokemonDataContext } from "../context/PokemonDataContext"; // context 용도
+import { useDispatch, useSelector } from "react-redux";
+import { deletePokemon } from "../slice/slice";
 
 const DashboardBox = styled.ul`
   display: flex;
@@ -37,8 +39,11 @@ const SelectedPokemon = styled.li`
 
 const Dashboard = () => {
   // const array = Array.from({length: 6}, () => null);
+  //const { selectedPokemon, deletePokemon } = useContext(PokemonDataContext); context 사용
 
-  const { selectedPokemon, deletePokemon } = useContext(PokemonDataContext);
+  const dispactch = useDispatch();
+
+  const selectedPokemon = useSelector((state) => state.pokemon);
 
   return (
     <DashboardBox>
@@ -49,7 +54,9 @@ const Dashboard = () => {
             <p>
               No. {pokemon.id} {pokemon.korean_name}
             </p>
-            <button onClick={() => deletePokemon(pokemon.id)}>삭제</button>
+            <button onClick={() => dispactch(deletePokemon(pokemon.id))}>
+              삭제
+            </button>
           </SelectedPokemon>
         );
       })}

@@ -6,7 +6,7 @@ export const PokemonDataProvider = ({ children }) => {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
 
   const addPokemon = (e, pokemon) => {
-    e.preventDefault();
+    e.stopProp
 
     const isAreadySelelcted = selectedPokemon.some((item) => {
       return item && item.id === pokemon.id;
