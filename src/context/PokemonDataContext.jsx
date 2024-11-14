@@ -29,7 +29,7 @@ export const PokemonDataProvider = ({ children }) => {
 
   return (
     <PokemonDataContext.Provider
-      value={{ selectedPokemon, addPokemon, deletePokemon }}
+      value={[{ selectedPokemon, addPokemon, deletePokemon }]}
     >
       {children}
     </PokemonDataContext.Provider>
