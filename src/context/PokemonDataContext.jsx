@@ -5,7 +5,9 @@ export const PokemonDataContext = createContext();
 export const PokemonDataProvider = ({ children }) => {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
 
-  const addPokemon = (pokemon) => {
+  const addPokemon = (e, pokemon) => {
+    e.preventDefault();
+
     const isAreadySelelcted = selectedPokemon.some((item) => {
       return item && item.id === pokemon.id;
     });
